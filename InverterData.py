@@ -182,7 +182,7 @@ if invstatus==1:
         p2=60+(a*4)
         hexpos=str("0x") + str(hex(a+pini)[2:].zfill(4)).upper()
         response=twosComplement_hex(str(''.join(hex(ord(chr(x)))[2:].zfill(2) for x in bytearray(data))+'  '+re.sub('[^\x20-\x7f]', '', ''))[p1:p2], hexpos)
-        with open("./SOFARMap.xml", encoding="utf-8") as txtfile:
+        with open("./deyeSun8KWlp1.xml", encoding="utf-8") as txtfile:
           parameters=json.loads(txtfile.read())
         for parameter in parameters:
           for item in parameter["items"]:
